@@ -1,0 +1,39 @@
+version: 2
+updates:
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+    labels:
+      - "github-actions"
+      - "dependencies"
+    assignees:
+      - "mathewlewallen"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+    target-branch: "dependencies"
+    labels:
+      - "npm dependencies"
+      - "security-update"
+    groups:
+      security-patches:
+        applies-to: security-updates
+        patterns:
+          - "*"
+      major-upgrades:
+        applies-to: version-updates
+        update-types:
+          - "major"
+      minor-and-patch:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
+    assignees:
+      - "mathewlewallen"

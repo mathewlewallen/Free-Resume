@@ -1,3 +1,10 @@
 {
-  "recommendations": ["nrwl.angular-console", "esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
+  "recommendations": [
+    "biomejs.biome",
+    "bradlc.vscode-tailwindcss",
+    "Prisma.prisma",
+    "unifiedjs.vscode-mdx",
+    "mikestead.dotenv",
+    "christian-kohler.npm-intellisense"
+  ]
 }

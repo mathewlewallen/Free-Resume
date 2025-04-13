@@ -1,16 +1,17 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "files": [],
-  "include": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ],
+  "extends": "@cc/typescript-config/nextjs.json",
   "compilerOptions": {
-    "esModuleInterop": true
-  }
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@cc/*": ["../../packages/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "next.config.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ]
 }

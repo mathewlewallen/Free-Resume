@@ -1,99 +1,193 @@
-![Reactive Resume](https://i.imgur.com/FFc4nyZ.jpg)
+# ResumeLM - AI-Powered Resume Builder
 
-![App Version](https://img.shields.io/github/package-json/version/AmruthPillai/Reactive-Resume?label=version)
-[![Docker Pulls](https://img.shields.io/docker/pulls/amruthpillai/reactive-resume)](https://hub.docker.com/repository/docker/amruthpillai/reactive-resume)
-[![GitHub Sponsors](https://img.shields.io/github/sponsors/AmruthPillai)](https://github.com/sponsors/AmruthPillai)
-[![Crowdin](https://badges.crowdin.net/reactive-resume/localized.svg)](https://crowdin.com/project/reactive-resume)
-[![Discord](https://img.shields.io/discord/1173518977851473940?label=discord&link=https%3A%2F%2Fdiscord.gg%2FhzwkZbyvUW)](https://discord.gg/hzwkZbyvUW)
+Try it out at [resumelm.com](https://resumelm.com)!
 
-# Reactive Resume
+> 🚧 **Under Active Development** 
 
-A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.
+An intelligent, open-source resume builder powered by AI that helps create and tailor resumes for specific job applications. Built with Next.js 15, React 19, TypeScript, and Shadcn UI.
 
-### [Go to App](https://rxresu.me/) | [Docs](https://docs.rxresu.me/)
+![Dashboard Screenshot](public/images/ss1.webp)
 
-## Description
+## ✨ Live Demo
 
-Reactive Resume is a free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume. With zero user tracking or advertising, your privacy is a top priority. The platform is extremely user-friendly and can be self-hosted in less than 30 seconds if you wish to own your data completely.
+Check out the live demo at [resumelm.com](https://resumelm.com)
 
-It's available in multiple languages and comes packed with features such as real-time editing, dozens of templates, drag-and-drop customisation, and integration with OpenAI for enhancing your writing.
+## 🌟 Key Features
 
-You can share a personalised link of your resume to potential employers, track its views or downloads, and customise your page layout by dragging-and-dropping sections. The platform also supports various font options and provides dozens of templates to choose from. And yes, there's even a dark mode for a more comfortable viewing experience.
+### Resume Management
+- 📝 Two-tier resume system:
+  - **Base Resumes**: Foundation templates for your professional profile
+  - **Tailored Resumes**: AI-optimized versions for specific job applications
+- 💼 Comprehensive section management for:
+  - Work Experience
+  - Education
+  - Projects
+  - Skills
+- 📊 Resume scoring system to measure effectiveness
+- 🗂️ Resume sorting and organization
+- 📱 Mobile-first approach with responsive layouts
+- 🎨 Modern, responsive design with soft gradient minimalist theme
 
-Start creating your standout resume with Reactive Resume today!
+![Resume Editor](public/images/ss2.webp)
 
-## Templates
+### AI Integration
+- 🤖 AI-powered content suggestions for all resume sections
+- 💡 Smart content optimization and improvement recommendations
+- 🎯 Intelligent job description analysis
+- 💬 Interactive AI assistant for resume writing guidance
+- ✨ Real-time content enhancement suggestions
+- 🔄 Multiple AI model support (OpenAI, Claude, Gemini, DeepSeek, Groq)
 
-| Azurill                                                      | Bronzor                                                     | Chikorita                                                   |
-| ------------------------------------------------------------ | ----------------------------------------------------------- | ----------------------------------------------------------- |
-| <img src="https://i.imgur.com/jKgo04C.jpeg" width="200px" /> | <img src="https://i.imgur.com/DFNQZP2.jpg" width="200px" /> | <img src="https://i.imgur.com/Dwv8Y7f.jpg" width="200px" /> |
+![AI Assistant](public/images/ss4.webp)
 
-| Ditto                                                       | Kakuna                                                      | Nosepass                                                    |
-| ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
-| <img src="https://i.imgur.com/6c5lASL.jpg" width="200px" /> | <img src="https://i.imgur.com/268ML3t.jpg" width="200px" /> | <img src="https://i.imgur.com/npRLsPS.jpg" width="200px" /> |
+### Cover Letter Generation
+- 📝 Integrated cover letter editor
+- 🤖 AI-assisted cover letter creation
+- 🔄 Synchronized with resume data
+- 📁 Export capabilities
 
-| Onyx                                                        | Pikachu                                                     | Rhyhorn                                                     |
-| ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
-| <img src="https://i.imgur.com/cxplXOW.jpg" width="200px" /> | <img src="https://i.imgur.com/Y9f7qsh.jpg" width="200px" /> | <img src="https://i.imgur.com/h4kQxy2.jpg" width="200px" /> |
+### Profile Management
+- 👤 User profile creation and management
+- 🎓 Education history tracking
+- 💼 Work experience management
+- 🛠️ Skills inventory
+- 🚀 Projects showcase
 
-## Features
+### Technical Features
+- 🔒 Row Level Security (RLS) for data protection
+- 🚀 Server-side rendering with Next.js 15 App Router
+- 📄 PDF generation and preview
+- 🎨 Custom design system with consistent UI/UX
+- 🔄 Real-time updates and preview
 
-- **Free, forever** and open-source
-- No telemetry, user tracking or advertising
-- You can self-host the application in less than 30 seconds
-- **Available in multiple languages** ([help add/improve your language here](https://translate.rxresu.me/))
-- Use your email address (or a throw-away address, no problem) to create an account
-- You can also sign in with your GitHub or Google account, and even set up two-factor authentication for extra security
-- Create as many resumes as you like under a single account, optimising each resume for every job application based on its description for a higher ATS score
-- **Bring your own OpenAI API key** and unlock features such as improving your writing, fixing spelling and grammar or changing the tone of your text in one-click
-- Translate your resume into any language using ChatGPT and import it back for easier editing
-- Create single page resumes or a resume that spans multiple pages easily
-- Customize the colours and layouts to add a personal touch to your resume
-- Customise your page layout as you like just by dragging-and-dropping sections
-- Create custom sections that are specific to your industry if the existing ones don't fit
-- Jot down personal notes specific to your resume that's only visible to you
-- Lock a resume to prevent making any further edits (useful for master templates)
-- **Dozens of templates** to choose from, ranging from professional to modern
-- Design your resume using the standardised EuroPass design template
-- Supports printing resumes in A4 or Letter page formats
-- Design your resume with any font that's available on [Google Fonts](https://fonts.google.com/)
-- **Share a personalised link of your resume** to companies or recruiters for them to get the latest updates
-- You can track the number of views or downloads your public resume has received
-- Built with state-of-the-art (at the moment) and dependable technologies that's battle tested and peer reviewed by the open-source community on GitHub
-- **MIT License**, so do what you like with the code as long as you credit the original author
-- And yes, there’s a dark mode too 🌓
+### Subscription Features
+- 🆓 Free tier with limited functionality
+- ⭐ Pro subscription plan with enhanced features
+- 💳 Stripe integration for payment processing
+- 🔄 Plan upgrade/downgrade capabilities
 
-## Built With
+## 🎨 Design System
 
-- React (Vite), for the frontend
-- NestJS, for the backend
-- Postgres (primary database)
-- Prisma ORM, which frees you to switch to any other relational database with a few minor changes in the code
-- Minio (for object storage: to store avatars, resume PDFs and previews)
-- Browserless (for headless chrome, to print PDFs and generate previews)
-- SMTP Server (to send password recovery emails)
-- GitHub/Google OAuth (for quickly authenticating users)
-- LinguiJS and Crowdin (for translation management and localization)
+### Core Principles
+- **Layered Depth**: Multiple translucent layers create visual hierarchy
+- **Organic Motion**: Subtle animations suggest liveliness without distraction
+- **Purposeful White Space**: Generous spacing improves content digestion
+- **Consistent Interaction**: Predictable hover and active states
 
-## Star History
+## 🛠️ Tech Stack
 
-<a href="https://star-history.com/#AmruthPillai/Reactive-Resume&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date" />
-  </picture>
-</a>
+### Frontend
+- Next.js 15 (App Router)
+- React 19
+- TypeScript
+- Shadcn UI Components
+- Tailwind CSS
+- React PDF
 
-## License
+### AI & Data Processing
+- OpenAI Integration
+- Server Components for AI Processing
+- Structured JSON Data Format
 
-Reactive Resume is packaged and distributed using the [MIT License](/LICENSE.md) which allows for commercial use, distribution, modification and private use provided that all copies of the software contain the same license and copyright.
+### Database
+- PostgreSQL with Row Level Security
+- Prisma ORM
+- Supabase Auth
 
-_By the community, for the community._  
-A passion project by [Amruth Pillai](https://www.amruthpillai.com/)
+## 🚀 Getting Started
 
-<p>
-  <a href="https://www.digitalocean.com/?utm_medium=opensource&utm_source=Reactive-Resume">
-    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/PoweredByDO/DO_Powered_by_Badge_blue.svg" width="200px">
-  </a>
-</p>
+1. Clone the repository:
+```bash
+git clone https://github.com/olyaiy/free-resume.git
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+pnpm install
+```
+
+3. Set up your environment variables:
+```bash
+cp .env.example .env.local
+```
+
+Required environment variables: Look in the `.env.example` file for the full list of required variables.
+
+4. Set up the database:
+
+This application uses Supabase for authentication and database features. You need to create a Supabase project and set up the required tables.
+
+**Option 1: Using the SQL Editor in Supabase Dashboard**
+   - Copy the contents of `schema.sql` from this repository
+   - Open your Supabase project dashboard
+   - Go to SQL Editor
+   - Paste and run the SQL script
+
+**Option 2: Using the Supabase CLI**
+   - Install the Supabase CLI
+   - Run the following command:
+   ```bash
+   supabase db push --db-url=your_supabase_db_url schema.sql
+   ```
+
+5. Start the development server:
+```bash
+npm run dev
+# or
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the application.
+
+### Database Schema
+
+This application requires several tables in your Supabase database:
+
+- **profiles**: Stores user profile information including work experience, education, and skills
+- **resumes**: Stores user-created resumes and their content
+- **jobs**: Tracks job descriptions for resume tailoring
+- **subscriptions**: Manages user subscription status
+
+The complete schema with all required fields is provided in the `schema.sql` file.
+
+## 🏗️ Project Status
+
+### Production Ready Features
+- ✅ Complete resume management system
+- ✅ AI-powered content generation and optimization
+- ✅ PDF export functionality
+- ✅ Responsive design system
+- ✅ User authentication and authorization
+- ✅ Profile management
+- ✅ Real-time preview and editing
+
+### Upcoming Features
+- 🔄 Enhanced AI tailoring algorithms
+- 🔄 Additional resume templates
+- 🔄 Advanced PDF customization
+- 🔄 Job application tracking
+- 🔄 Analytics dashboard
+
+## 📝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+## 📄 License
+
+[GNU Affero General Public License v3 (AGPL-3.0)](LICENSE)
+
+This project is licensed under the GNU AGPL v3 license. This means:
+- ✅ You can view, use, and modify the code
+- ✅ You can distribute the code
+- ✅ You must keep the source code open source
+- ✅ Any modifications must also be under AGPL-3.0
+- ❌ You cannot use this code in closed-source commercial applications
+- ❌ You cannot use this code to provide a similar service without making your code open source
+
+For more details, see the [full license text](LICENSE).
+
+---
+
+Built with ❤️ using [Next.js](https://nextjs.org/)

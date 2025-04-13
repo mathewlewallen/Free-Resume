@@ -1,0 +1,18 @@
+packages:
+  - apps/*
+  - packages/*
+  - '!**/test/**'
+  - '!**/__tests__/**'
+onlyBuiltDependencies:
+  - '@biomejs/biome'
+  - '@clerk/shared'
+  - '@prisma/client'
+  - '@prisma/engines'
+  - '@sentry/cli'
+  - '@vercel/speed-insights'
+  - bufferutil
+  - core-js
+  - core-js-pure
+  - esbuild
+  - prisma
+  - sharp
